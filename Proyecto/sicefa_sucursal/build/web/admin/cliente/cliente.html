@@ -1,0 +1,212 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>M&oacute;dulo de Control de Clientes</h3>
+            </div>
+            <div class="card-body">
+                <div id="divDetalleCliente" class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="h4">Detalle del Cliente</span>
+                                <button class="float-end btn btn-outline-danger" onclick="cm.setDetalleClienteVisible(false);">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="row">
+                                            <div class="col" style="color: #FF6D00;">
+                                                <span class="h5"> Datos personales</span>
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 mt-2">
+                                            <div class="form-floating">
+                                                <input id="txtIdCliente" type="text" class="form-control" placeholder="Id Cliente:"/>
+                                                <label for="txtIdCliente">Id Cliente:</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mt-2">
+                                            <div class="form-floating">
+                                                <input id="txtIdPersona" type="text" class="form-control" placeholder="Id Persona:"/>
+                                                <label for="txtIdPersona">Id Usuario:</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                        <div class="row mt-2">
+                                            <div class="col-3">
+                                            <div class="form-floating">
+                                                <input id="txtNombre" type="text" class="form-control" placeholder="Nombre:"/>
+                                                <label for="txtNombre">Nombre:</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating">
+                                                <input id="txtApellidoPaterno" type="text" class="form-control" placeholder="Apellido Paterno:"/>
+                                                <label for="txtApellidoPaterno">Apellido Paterno:</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating">
+                                                <input id="txtApellidoMaterno" type="text" class="form-control" placeholder="Apellido Materno:"/>
+                                                <label for="txtApellidoMaterno">Apellido Materno:</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    <div class="row mt-2">
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <select class="form-select" id="cmbGenero" aria-label="G&eacute;nero">
+                                                    <option value="0"></option>
+                                                    <option value="H">Hombre</option>
+                                                    <option value="M">Mujer</option>
+                                                    <option value="O">Otro</option>
+                                                </select>
+                                                <label for="cmbGenero">G&eacute;nero</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtFechaNacimiento" type="text" class="form-control" placeholder="Fecha Nacimiento"/>
+                                                <label for="txtFechaNacimiento">Fecha de Nacimiento: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtRfc" type="text" class="form-control" placeholder="RFC"/>
+                                                <label for="txtRfc">RFC: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtCurp" type="text" class="form-control" placeholder="CURP"/>
+                                                <label for="txtCurp">CURP: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtFoto" type="text" class="form-control" placeholder="Foto"/>
+                                                <label for="txtFoto">URL Foto: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtDomicilio" type="text" class="form-control" placeholder="Domicilio"/>
+                                                <label for="txtDomicilio">Domicilio: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtCp" type="text" class="form-control" placeholder="C&oacute;digo Postal"/>
+                                                <label for="txtCp">C&oacute;digo Postal: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtCiudad" type="text" class="form-control" placeholder="Ciudad"/>
+                                                <label for="txtCiudad">Ciudad: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtEstado" type="text" class="form-control" placeholder="Estado"/>
+                                                <label for="txtEstado">Estado: </label>
+                                            </div>
+                                        </div>              
+                                        <div class="col-3">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtTelefono" type="text" class="form-control" placeholder="Tel&eacute;fono"/>
+                                                <label for="txtTelefono">Tel&eacute;fono: </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col" style="color: #FF6D00;">
+                                                <span class="h5">Datos de Cliente</span>
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtFechaRegistro" type="text" class="form-control" placeholder="Fecha de Registro"/>
+                                                <label for="txtFechaRegistro">Fecha de Registro: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtEmail" type="email" class="form-control" placeholder="Email"/>
+                                                <label for="txtEmail">Email: </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-floating mb-3">
+                                                <input id="txtEstatus" type="text" class="form-control" placeholder="Estatus"/>
+                                                <label for="txtEstatus">Estatus: </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <div class="text-center">
+                                                <button class="btn btn-primary me-2" onclick="cm.save();">
+                                                    <i class="fa fa-floppy-disk"></i>
+                                                    Guardar
+                                                </button>
+                                                <button class="btn btn-danger ms-2 me-2" onclick="cm.deleteCliente();">
+                                                    <i class="fa fa-trash-can"></i>
+                                                    Eliminar
+                                                </button>
+                                                <button class="btn btn-success ms-2" onclick="cm.clearForm();">
+                                                    <i class="fa fa-plus"></i>
+                                                    Nuevo
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divCatalogoClientes" class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <span>Cat&aacute;logo de Clientes</span>
+                                <buton class="ms-3 btn btn-outline-success" onclick="cm.clearAndShowDetalleCliente();">
+                                    <i class="fa fa-plus"></i>
+                                    Nuevo
+                                </buton>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <input id="txtFiltro" type="text" placeholder="Buscar"/>
+                                    <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre Completo</th>
+                                            <th>C&oacute;digo de Cliente</th>
+                                            <th>RFC</th>
+                                            <th>Email</th>
+                                            <th>Tel&eacute;fono</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodyClientes">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
